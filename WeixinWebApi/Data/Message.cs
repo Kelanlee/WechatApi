@@ -189,31 +189,34 @@ namespace Data
             switch (str.ToLower())
             {
                 case "text":
-                    return MessageType.text;
+                    return MessageType.Text;
                 case "image":
-                    return MessageType.image;
+                    return MessageType.Image;
                 case "voice":
-                    return MessageType.voice;
+                    return MessageType.Voice;
                 case "video":
-                    return MessageType.video;
+                    return MessageType.Video;
                 case "location":
-                    return MessageType.location;
+                    return MessageType.Location;
                 case "link":
-                    return MessageType.link;
+                    return MessageType.Link;
+                case "event":
+                    return MessageType.Event;
                 default:
-                    return MessageType.others;
+                    return MessageType.Others;
             }
         }
     }
 
     public enum MessageType
     {
-        text=1,
-        image=2,
-        voice=3,
-        video=4,
-        location=5,
-        link=6,
-        others=0
+        Text=1,
+        Image=2,
+        Voice=3,
+        Video=4,
+        Location=5,
+        Link=6,
+        Event=7,
+        Others=0
     }
 }

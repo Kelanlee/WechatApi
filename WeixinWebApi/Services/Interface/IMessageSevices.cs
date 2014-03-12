@@ -9,5 +9,11 @@ namespace Services.Interface
     public interface IMessageSevices
     {
         string ReplyMessage(XmlDocument xml);
+
+        bool GetToken();
+
+        bool SendMessage(string openId, string content);
+
+        bool SetMenu();
     }
 }
